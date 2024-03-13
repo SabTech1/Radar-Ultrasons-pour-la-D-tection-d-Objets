@@ -1,18 +1,27 @@
-# radar-target-tracking-simulation
-Ce dépôt contient un code MATLAB qui simule la planification de tâches radar pour suivre des cibles mobiles dans un environnement donné. Le code effectue les opérations suivantes :
+# Projet de Radar Ultrasonique avec Arduino
+Ce projet utilise un capteur à ultrasons connecté à une carte Arduino pour détecter la distance des objets et afficher les informations sur un écran LCD. En fonction de la distance mesurée, différentes LEDs s'allument et un buzzer émet des sons pour avertir de la présence d'objets à proximité.
 
-1. Génération de données initiales : Des positions et des vitesses aléatoires sont générées pour un nombre spécifié de cibles.
+# Matériel requis
+* Arduino Uno (ou autre modèle compatible)
+* Capteur à ultrasons HC-SR04
+* Écran LCD 16x2
+* LEDs (rouge, bleu, verte)
+* Buzzer actif
+* Résistances
+* Câbles de connexion
+# Bibliothèques utilisées
+1. LiquidCrystal.h : Utilisée pour contrôler l'écran LCD.
+2. math.h : Utilisée pour les calculs trigonométriques pour déterminer l'angle d'observation.
+# Configuration du matériel
+- Connectez le capteur à ultrasons HC-SR04 aux broches appropriées de l'Arduino.
+- Connectez l'écran LCD à l'Arduino.
+- Connectez les LEDs et le buzzer aux broches de sortie numériques de l'Arduino.
+# Fonctionnement
+Le programme mesure la distance des objets à l'aide du capteur à ultrasons et calcule également l'angle d'observation. En fonction de la distance mesurée, les LEDs et le buzzer sont contrôlés pour avertir de la proximité des objets. Les informations sur la distance mesurée et l'angle d'observation sont affichées sur l'écran LCD.
 
-2. Définition des tâches radar : Des tâches radar avec des temps d'exécution et des échéances aléatoires sont définies pour chaque cible.
+# Contributions
+Les contributions sont les bienvenues ! Si vous souhaitez contribuer à ce projet, n'hésitez pas à soumettre une demande d'extraction avec vos modifications.
 
-3. Simulation du mouvement des cibles et des opérations radar : Le mouvement des cibles est simulé, et les signaux radar sont générés en fonction de leurs positions. La planification des tâches radar est effectuée à l'aide de l'algorithme EDF (Earliest Deadline First).
+# Licence
+Ce projet est sous licence MIT. Consultez le fichier LICENSE pour plus d'informations.
 
-4. Évaluation des performances du système : La latence moyenne du système est calculée pour évaluer ses performances.
-
-5. Visualisation des résultats : Plusieurs graphiques sont générés pour visualiser les trajectoires des cibles, la planification des tâches radar, l'histogramme des latences et la performance du système au fil du temps.
-
-## Utilisation :
-
-Pour exécuter la simulation, assurez-vous d'avoir MATLAB installé sur votre système. Téléchargez ou clonez ce dépôt, puis exécutez le fichier principal main.m.
-
-Remarque : Ce code est conçu à des fins éducatives et de démonstration pour illustrer la planification de tâches radar dans un contexte de suivi de cibles mobiles. Les paramètres de simulation et les algorithmes de planification peuvent être ajustés selon les besoins spécifiques du projet.
