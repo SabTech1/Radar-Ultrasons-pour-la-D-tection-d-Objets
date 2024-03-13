@@ -22,6 +22,3 @@ Le programme mesure la distance des objets à l'aide du capteur à ultrasons et 
 # Contributions
 Les contributions sont les bienvenues ! Si vous souhaitez contribuer à ce projet, n'hésitez pas à soumettre une demande d'extraction avec vos modifications.
 
-# Licence
-Ce projet est sous licence MIT. Consultez le fichier LICENSE pour plus d'informations.
-
