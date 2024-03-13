@@ -17,7 +17,7 @@ Ce projet utilise un capteur à ultrasons connecté à une carte Arduino pour d�
 - Connectez l'écran LCD à l'Arduino.
 - Connectez les LEDs et le buzzer aux broches de sortie numériques de l'Arduino.
 # Fonctionnement
-Le programme mesure la distance des objets à l'aide du capteur à ultrasons et calcule également l'angle d'observation. En fonction de la distance mesurée, les LEDs et le buzzer sont contrôlés pour avertir de la proximité des objets. Les informations sur la distance mesurée et l'angle d'observation sont affichées sur l'écran LCD.
+Le programme mesure la distance des objets à l'aide du capteur à ultrasons et calcule également l'angle d'observation. En fonction de la distance mesurée et de l'angle calculé, les LEDs et le buzzer sont contrôlés pour avertir de la proximité des objets. Les informations sur la distance mesurée et l'angle d'observation sont affichées sur l'écran LCD.
 
 # Contributions
 Les contributions sont les bienvenues ! Si vous souhaitez contribuer à ce projet, n'hésitez pas à soumettre une demande d'extraction avec vos modifications.
